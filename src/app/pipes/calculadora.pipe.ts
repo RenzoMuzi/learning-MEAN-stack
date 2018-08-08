@@ -17,4 +17,4 @@ export class CalculadoraPipe implements PipeTransform{
 
         return operaciones;
     }
-}
+}   
