@@ -1,8 +1,8 @@
-//Importar modulos del route de angular
+// Importar modulos del route de angular
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-//Importar componentes
+// Importar componentes
 import { HomeComponent } from './home/home.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
 import { VideojuegoComponent } from './videojuego/videojuego.component';
@@ -11,8 +11,8 @@ import { ExternoComponent } from './externo/externo.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
 
-//Array de ruta (configuracion de las rutas)
-const appRoutes : Routes = [
+// Array de ruta (configuracion de las rutas)
+const appRoutes: Routes = [
     { path: '' , component: HomeComponent },
     { path: 'home' , component: HomeComponent },
     { path: 'zapatillas' , component: ZapatillasComponent },
@@ -23,9 +23,8 @@ const appRoutes : Routes = [
     { path: 'externo', component: ExternoComponent },
     { path: 'contacto', component: ContactoComponent },
     { path: '**' , component: HomeComponent }
-    
 ];
 
-//Exportar el modulo del router
+// Exportar el modulo del router
 export const appRoutingProviders: any[] = [];
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes)
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
